@@ -1,0 +1,120 @@
+* {
+  font-family: sans-serif;
+}
+
+header {
+  font-style: strong;
+  padding: 10px;
+}
+
+h2 {
+  color: blue;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  background-color: yellow
+}
+
+.navbar {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  background-color: #778899;
+  justify-content: left;
+  text-decoration: none;
+}
+
+.item:hover {
+  background-color: yellow;
+}
+
+.item {
+  background-color: white;
+  margin: 10px;
+  padding: 15px;
+  font-size: 16px
+}
+
+.box {
+  max-width: 800px;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.list {
+  display: inline-block;
+  text-align: left;
+  width: 200px;
+  height: 100px;
+}
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 150px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.title {
+  font-style: oblique;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+
+  .clearfix:after {
+    content="";
+    display: table;
+    clear: both;
+  }
+
+  div.box2 {
+    max-width: 800px;
+    height: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #one {
+    margin-left: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 1px black;
+    text-align: left;
+    float: left;
+  }
+
+  #two {
+    float: left;
+    padding-left: 100px;
+    text-align: left;
+  }
+}
